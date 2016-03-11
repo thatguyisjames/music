@@ -1,5 +1,5 @@
 body{
-
+  background-color: #000000;
 }
 a{
   color: white;
@@ -9,7 +9,7 @@ a{
   padding-top: 50px;
   margin:0 auto;
   width: 800px;
-  background-color: green;
+  background-color: #1a1a1a;
   padding-bottom: 50px;
 }
 #search{
@@ -17,7 +17,7 @@ a{
   width: 700px;
   height: 6em;
   margin-bottom: 25px;
-  background-color: gray;
+  background-color: white;
   color: black;
   font-family: monospace;
 }
@@ -33,7 +33,7 @@ a{
   margin: 0 auto;
   width: 700px;
   height: auto;
-  background: gray;
+  background: #404040;
   padding-top: 25px;
   padding-bottom: .5px;
 }
@@ -41,7 +41,7 @@ a{
   margin: 0 auto;
   width: 600px;
   height: 2em;
-  background:blue;
+  background: #000000;
   margin-bottom: 25px;
   font-family: monospace;
   padding-top: 1em;

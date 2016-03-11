@@ -8,15 +8,17 @@
     <!-- Background div holding it all -->
     <?php
     // give me the dam dir variable based on url
+    include "config.php";
     include "dir.php";
     ?>
     <div id="center">
       <!-- Title bar with "search" div -->
-      <div id="search">
+
+<!--      <div id="search">
         <form>
           <input class="search" type="text" src="index.php" />
         </form>
-      </div>
+      </div> -->
       <!-- current Directory list div -->
       <div id="dir">
         <!-- media player div, with audio tag -->

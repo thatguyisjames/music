@@ -8,29 +8,44 @@ $scan = scandir($dir);
 while ($count <= $limit){
   // sets current artist, album, or song value
   $current = $scan[$count];
-  // if the first 4 some how slow up in any of the directories for album or songs
   // *change* block everything thats not mp3 or a directory
   // *change* I have no dam clue how to do that, so maybe later
-  if ($current == "." || $current == ".." || $current == ".DS_Store" || $current == "._.DS_Store" ){
+  foreach ($ignore as $skip){
+    if ($current == $skip){
+      $skipthis = TRUE;
+      $count++;
+    }
+  }
+  foreach ($ignoreft as $skipft){
+    if (substr($current, -3) == $skipft){
+      $skipthis = TRUE;
+      $count++;
+    }
+  }
+//  if ($current == "." || $current == ".." || $current == ".DS_Store" || $current == "._.DS_Store" || $current == "" ){
+//    $count++;
+//  }
+  if ($skipthis == TRUE){
+    unset($skipthis);
+  }
+  elseif (isset($album) && substr($current, -3) != "mp3"){
     $count++;
   }
   // print the items on the screen
   // and increase count by 1
   else {
     ?>
-    <div id="file">
-    <a href='<?php
+    <a href="<?php
     if ($main == TRUE){
     print "?artist=" . $current;
     }
     elseif (isset($artist) == TRUE && isset($album) == FALSE){
     print "?artist=" . $artist . "&album=" . $current;
     }
-    elseif (isset($album)){
-    print "http://thatguyisjames.com/music/".$artist."/".$album."/".$current;
+    elseif (isset($artist) == TRUE && isset($album) == TRUE){
+    print $site.$artist."/".$album."/".$current;
     }
-    ?>'><?php print $current; ?></a>
-    </div>
+    ?>"><div id="file"><?php print $current; ?></div></a>
     <?php
     $count++;
     // since this is after count, it checks to see if the next item is blank

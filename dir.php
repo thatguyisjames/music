@@ -1,6 +1,5 @@
 <?php
-// location of all the music files, should be organized via /arist/ablum/song.mp3
-$musicdir = "/media/files/music";
+
 // if artist is set in url, then add that to the dir
 if (isset($_GET["artist"])){
   $artist = $_GET["artist"];
@@ -18,14 +17,14 @@ if (isset($_GET["artist"])){
 else{
   if(isset($_GET["page"])){
     $page = $_GET["page"];
-    $count = 30 * $page + 4;
-    $limit = 30 * $page + 34;
+    $count = 30 * $page;
+    $limit = 30 * $page + 30;
   }
   // if no page is set, skip first 4 entrys ".", "..", ".ds_store", and "._.ds_store"
   // then list 30 items.
   else{
-    $count = 4;
-    $limit = 34;
+    $count = 0;
+    $limit = 30;
   }
   // unset is just incase that crap was set, really not needed, but
   // usefull if you just fell back to the main page. variables aren't sitting with old values
