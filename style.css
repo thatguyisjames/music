@@ -15,10 +15,13 @@ a{
 #search{
   margin: 0 auto;
   width: 700px;
-  height: 6em;
+  height: 1.5em;
+  padding-top: 0.5em;
   margin-bottom: 25px;
   background-color: white;
   color: black;
+  font-size: 2em;
+  text-align: center;
   font-family: monospace;
 }
 .search{
@@ -44,8 +47,23 @@ a{
   background: #000000;
   margin-bottom: 25px;
   font-family: monospace;
+  font-size: 11px;
   padding-top: 1em;
   padding-left: 25px;
   padding-right: 25px;
   text-align: center;
+}
+ol{
+  text-decoration: none;
+}
+li{
+  margin-left: -28em;
+  font-size: 1px;
+}
+.audiojs{
+ margin: 0 auto;
+ width: 600px;
+}
+.audiojs .scrubber{
+  width:430px;
 }
