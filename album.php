@@ -44,7 +44,7 @@ $scan = scandir($dir);
     // loop php, goes though every file it scanned.
     foreach($scan as $song) {
       // this makes the URL for the mp3 to link to
-      $url = $site . "/" . $dir . "/" . $song;
+      $url =  $site . "/" . $artist . "/" . $album . "/" . $song;
       // if the scanned file is anything other than a mp3, does nothing.
       if (substr($song, -3) != "mp3"){
 

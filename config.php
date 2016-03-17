@@ -1,6 +1,6 @@
 <?php
 // location of all the music files, should be organized via /arist/ablum/song.mp3
-$musicdir = "/media/removable/Files/music";
+$musicdir = "/media/files/music";
 // file names and directories to ignore while listing albums and artist.
 $ignore = array("music", ".", "..", ".DS_Store", "._.DS_Store", "");
 // file types to ignore when listing albums and artist
