@@ -53,6 +53,23 @@ a{
   padding-right: 25px;
   text-align: center;
 }
+#page{
+  margin: 0 auto;
+  width: 600px;
+  height: 2em;
+  background: #000000;
+  font-family: monospace;
+  font-size: 11px;
+}
+.backward{
+  float: left;
+  width: 200px;
+}
+.forward{
+  float: right;
+  width: 200px;
+
+}
 ol{
   text-decoration: none;
 }

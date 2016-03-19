@@ -28,6 +28,14 @@
         include "list.php";
         ?>
       </div>
+      <div id="page">
+        <div class="backward">
+          Last Page.
+        </div>
+        <div class="forward">
+          Next Page.
+        </div>
+      </div>
     </div>
   </body>
 </html>
