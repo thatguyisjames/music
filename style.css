@@ -53,6 +53,35 @@ a{
   padding-right: 25px;
   text-align: center;
 }
+#page{
+  margin: 0 auto;
+  width: 700px;
+  font-family: monospace;
+  font-size: 1em;
+  color: #ffffff;
+  text-align: center;
+  display: inline-block;
+  margin-bottom: 25px;
+}
+.backward{
+  display: inline-block;
+  float: left;
+  width: 300px;
+  height: 1.75em;
+  padding-top: .25em;
+  background: #000000;
+  margin-left: 25px;
+}
+.forward{
+  display: inline-block;
+  float: right;
+  width: 300px;
+  height: 1.75em;
+  padding-top: .25em;
+  background: #000000;
+  margin-right: 25px;
+
+}
 ol{
   text-decoration: none;
 }
