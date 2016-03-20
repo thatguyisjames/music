@@ -8,6 +8,7 @@ $ignoreft = array("ini");
 // the site url, used for generating links to the MP3 file.
 // ** should be phased out as .JS media player is intagrated.
 $site = "http://thatguyisjames.com/music/player/";
+$sitemusic = "http://thatguyisjames.com/music/";
 
 // with that being said, location of .JS media player files.
 $JSdir = "audiojs/";

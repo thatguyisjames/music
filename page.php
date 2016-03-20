@@ -7,7 +7,7 @@ if (isset($_GET['page'])){
   $backward = $site . "?page=" . $pageb;
   if ($pageb == 0){
     $backward = $site;
-    $forward = $site . "?page=1";
+    $forward = $site . "?page=2";
   }
 }
 else {

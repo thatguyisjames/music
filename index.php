@@ -25,7 +25,7 @@
         <?php
         // scan for the file/folder names and list them
         // output is the div with a id of file
-        //include "list.php";
+        include "list.php";
         include "page.php";
         ?>
         <div id="page">

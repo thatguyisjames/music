@@ -40,7 +40,7 @@ while ($count <= $limit){
     print "?artist=" . $current;
     }
     elseif (isset($artist) == TRUE && isset($album) == FALSE){
-    print $site . "player/album.php?artist=" . $artist . "&album=" . $current;
+    print $site . "album.php?artist=" . $artist . "&album=" . $current;
     }
     elseif (isset($artist) == TRUE && isset($album) == TRUE){
       // dirty header trick to redirect the page if both album and artist are set.
