@@ -25,15 +25,20 @@
         <?php
         // scan for the file/folder names and list them
         // output is the div with a id of file
-        include "list.php";
+        //include "list.php";
+        include "page.php";
         ?>
-      </div>
-      <div id="page">
-        <div class="backward">
-          Last Page.
-        </div>
-        <div class="forward">
-          Next Page.
+        <div id="page">
+          <a href="<?php print $backward; ?>">
+            <div class="backward">
+              Last Page.
+            </div>
+          </a>
+          <a href="<?php print $forward; ?>">
+            <div class="forward">
+              Next Page.
+            </div>
+          </a>
         </div>
       </div>
     </div>
